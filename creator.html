@@ -1,15 +1,20 @@
 <!doctype html>
+<!--Adding background image to the html-->
+<html>
+<body style="background-color:lavenderblush;">
+</body>
+</html>
+
 <html lang="en" ng-app="Dashboard">
   <head>
     <meta charset="UTF-8">
 
-    <title>Asset Track</title>
+    <title>Upload Videos</title>
 
       <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
       <script type="text/javascript" src="JS/bootstrap.js"></script>
       <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
       <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
-
       <script type="text/javascript" src="JS/app.js"></script>
 
   </head>
@@ -23,7 +28,7 @@
             <div class="col-2"  ></div>
 
             <div class="col-8" style="text-align: center;">
-              <h3>Image Share</h3>
+              <h3>Video Share</h3>
             </div>
 
             <div class="col-2"  ></div>
@@ -34,7 +39,7 @@
             <div class="col-2"  ></div>
 
             <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
-              <p>Add Image</p>
+              <p>Add Video</p>
 
               <form style="font-size: 10pt;" id="newAssetForm">
                 <div class="mb-3">
@@ -51,6 +56,33 @@
                   <label for="userName" class="form-label">User Name</label>
                   <input type="text" class="form-control" id="userName">
                 </div>
+<!--Added new fields below Title,-->
+                <div class="mb-3">
+                  <label for="Title" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="Title">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Publisher" class="form-label">Publisher</label>
+                  <input type="text" class="form-control" id="Publisher">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Producer" class="form-label">Producer</label>
+                  <input type="text" class="form-control" id="Producer">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Genre" class="form-label">Genre</label>
+                  <input type="text" class="form-control" id="Genre">
+                </div>
+
+                <div class="mb-3">
+                  <label for="Agerating" class="form-label">Age Rating</label>
+                  <input type="text" class="form-control" id="Agerating">
+                </div>
+
+
 
                 <div class="mb-3">
                   <label for="UpFile" class="form-label">File to Upload</label>
@@ -65,18 +97,18 @@
             <div class="col-2"  ></div>
         </div>
 
-        <!-- view Asset Area-->
+        <!-- view uploaded videos-->
         <div class="row align-items-start">
             <div class="col-2"  ></div>
 
             <div class="col-8" style="text-align: left;" >
               <div style="padding:5px;">
-                <button  id = "retImages" type="button" class="btn btn-primary">View Images</button>
+                <button  id = "retImages" type="button" class="btn btn-primary">View Videos</button>
               </div>
 
               <div id="ImageList">
 
-                <h4>Please click the view Images button if you wish to view images on the system.</h4>
+                <h4>Please click the view videos button if you wish to view videos on the system.</h4>
 
               </div>
             </div>
